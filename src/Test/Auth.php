@@ -24,7 +24,8 @@
                 $errors[] = 'Вы должны быть старше 13';
             }
 
-            if ($password != $repassword) {
+            if (
+                $password != $repassword) {
                 $error = true;
                 $errors[] = 'Пароли не совпадают';
             }
