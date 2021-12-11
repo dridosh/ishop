@@ -29,7 +29,7 @@
                 <input hidden class="form-control mb-2" name='id_new' value="<?= $id ?>">
                 <input required class="form-control mb-2" name='name_new' placeholder="измените имя категории"
                        value="<?= $categories['name'] ?>">
-                <textarea required class="form-control mb-2" name='description_new' row='3'
+                <textarea required class="form-control mb-2" name='description_new' rows='3'
                           placeholder="Измените описание категории"><?= $categories['description'] ?></textarea>
                 <h2>Выберите новую картинку</h2>
                 <input  class="form-control mb-2 w-50" type="file" name="file">

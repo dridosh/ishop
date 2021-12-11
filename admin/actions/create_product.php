@@ -33,7 +33,8 @@
     $fullname = '../../uploads/' . $shortname;
     move_uploaded_file($temp_name, $fullname);
 
-    $query = "INSERT INTO products (name, description, category_id, vendor_code, price, picture) VALUES (:name, :description, :category_id, :vendor_code, :price, :picture)";
+    $query = "INSERT INTO products (name, description, category_id, vendor_code, price, picture) VALUES 
+                                    (:name, :description, :category_id, :vendor_code, :price, :picture)";
     $res = $mysql->prepare($query);
     $res->execute([
         ':name'        => $name,
